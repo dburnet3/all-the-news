@@ -25,6 +25,11 @@ db.once("open", function () {
     console.log("You are connected to Mongoose");
 });
 
+//Connected to MongoDB!
+const MONGODB_URI =
+    process.env.MONGODB_URI || "mongodb://localhost/all-the-news";
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
+
 
 //Require handlebars
 const exphbs = require("express-handlebars");
