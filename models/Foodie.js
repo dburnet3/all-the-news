@@ -3,10 +3,12 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const foodieSchema = new Schema({
     title: {
-        type: String
+        type: String,
+        required: true
     },
     link: {
-        type: String
+        type: String,
+        required: false
     }
 });
 
