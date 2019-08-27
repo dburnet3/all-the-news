@@ -8,7 +8,7 @@ const foodieSchema = new Schema({
     },
     link: {
         type: String,
-        required: false
+        required: true
     }
 });
 

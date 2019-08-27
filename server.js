@@ -54,9 +54,7 @@ app.get("/scrape", function (req, res) {
             results.title = $(this)
                 .children()
                 .text();
-            results.link = $(this)
-                .find("a")
-                .attr("https://www.bonappetit.com/tag/highly-recommend" + "href");
+            results.link = "https://www.bonappetit.com/story" + $(this).find("a").attr("href");
 
             // //Saving the results in an object that I'll push into the results array
             // results.push({
