@@ -27,7 +27,9 @@ app.use(express.json());
 app.use(express.static("public"));
 
 //Connected to MongoDB!
-mongoose.connect('mongodb://localhost/Foodie', { useNewUrlParser: true });
+mongoose.connect('mongodb://heroku_9gd8m8tz:s11qgn16b28dfq32q60gmt6qcm@ds255107.mlab.com:55107/heroku_9gd8m8tz', { useNewUrlParser: true });
+
+//mongoose.connect('mongodb://localhost/Foodie', { useNewUrlParser: true });
 
 // Setting up basic middleware for all Express requests
 app.use(bodyParser.urlencoded({ extended: false })); // Parses urlencoded bodies
