@@ -3,7 +3,7 @@ $.getJSON("/foodieReads", function (data) {
     // For each one
     for (var i = 0; i < data.length; i++) {
         // Display the apropos information on the page
-        $("#Foodie_Reads").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + data[i].link + "</p>" + "<hr>");
+        $("#Foodie_Reads").append("<h2 data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + "</h2>" + "<p>" + data[i].link + "</p>" + "<hr>");
     }
 });
 

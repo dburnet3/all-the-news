@@ -52,7 +52,7 @@ app.get("/scrape", function (req, res) {
 
 
             results.title = $(this)
-                .children()
+                .find("h1")
                 .text();
             results.link = "https://www.bonappetit.com/story" + $(this).find("a").attr("href");
 
